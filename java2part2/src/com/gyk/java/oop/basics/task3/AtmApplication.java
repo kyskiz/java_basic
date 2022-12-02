@@ -2,7 +2,7 @@ package com.gyk.java.oop.basics.task3;
 
 public class AtmApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InsufficientAtmFundsException {
         CreditCard creditCard = new CreditCard(
                 100.,
                 "Vardas Pavardas",
@@ -25,7 +25,7 @@ public class AtmApplication {
         debitCard.printCardBalance();
         atm.widthdraw(debitCard, 500.);
 
-//        atm.widthdraw(creditCard, 50);
+        atm.widthdraw(creditCard, 50);
 
 
     }

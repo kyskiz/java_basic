@@ -4,7 +4,7 @@ public class MyBankAtm implements Atm {
     private double balance;
 
     @Override
-    public void widthdraw(Card card, double amount) {
+    public void widthdraw(Card card, double amount) throws InsufficientAtmFundsException {
 
         if (amount > this.getBalance()) {
             throw new InsufficientAtmFundsException("Atm has insufficient funds", new Throwable());
