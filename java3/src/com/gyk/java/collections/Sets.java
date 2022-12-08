@@ -12,15 +12,12 @@ public class Sets {
         Student john = new Student("John", 22, 10);
         Student johnCopy = new Student("John", 22, 10);
 
-
         students.add(john);
         students.add(john);
         students.add(johnCopy);
 
         System.out.println(students.size());
         System.out.println(students);
-
-
     }
 
 }
