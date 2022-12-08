@@ -59,6 +59,15 @@ public class Game implements Comparable<Game>{
         System.out.println(this.toString());
     }
 
+    public void childMethod() {
+        System.out.println("Called child method");
+    }
+
+    public void parentMethod() {
+        System.out.println("Called parent method");
+        this.childMethod();
+    }
+
     @Override
     public int compareTo(Game o) {
         return Integer.compare(this.getCopiesSold(), o.getCopiesSold());
